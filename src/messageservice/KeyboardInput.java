@@ -1,10 +1,10 @@
 package messageservice;
 
-//import java.util.Scanner;
+import java.util.Scanner;
 
 public class KeyboardInput implements MessageInput{
 
-//    Scanner keyboard = new Scanner(System.in);
+    Scanner keyboard = new Scanner(System.in);
         
     private String message;
 
@@ -14,12 +14,13 @@ public class KeyboardInput implements MessageInput{
     
     
     
-    
-//    @Override
-//    public void inputMessage(){
-//        
-//        message = keyboard.nextLine();
-//    }
+    //this method has the user actually enter a message, then sets it to the "message" variable
+    @Override
+    public void retrieveMessage(){
+        System.out.println("Using the keyboard, please enter a message: ");
+        setMessage(keyboard.nextLine());
+//        return message;
+    }
 
     @Override
     public void setMessage(String message) {

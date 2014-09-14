@@ -1,8 +1,8 @@
-
 package messageservice;
 
 public interface MessageInput {
-//    public abstract void inputMessage();
+    
+    public abstract void retrieveMessage();
     
     public abstract void setMessage(String message);
     
