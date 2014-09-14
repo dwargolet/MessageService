@@ -14,7 +14,7 @@ public class MessageManager {
         this.output = output;
     }
    
-   public void processMessage(MessageInput input, MessageOutput output){
+   public void processMessage(){
        input.retrieveMessage();
        output.outPutMessage(input.getMessage());
        

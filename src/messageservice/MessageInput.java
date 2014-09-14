@@ -2,7 +2,7 @@ package messageservice;
 
 public interface MessageInput {
     
-    public abstract void retrieveMessage();
+    public abstract String retrieveMessage();
     
     public abstract void setMessage(String message);
     
