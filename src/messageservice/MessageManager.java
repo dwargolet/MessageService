@@ -14,16 +14,13 @@ public class MessageManager {
         this.output = output;
     }
    
-   private void processMessage(MessageInput input, MessageOutput output){
+   public void processMessage(MessageInput input, MessageOutput output){
        input.retrieveMessage();
        output.outPutMessage(input.getMessage());
        
    }
    
-   public void completeMessageProcess(){
-       processMessage(MessageInput input, MessageOutput output);
-   }
-    
+   
     
     
 }
