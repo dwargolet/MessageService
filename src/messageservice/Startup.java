@@ -13,8 +13,10 @@ public class Startup {
 
         
         MessageInput messageIn = new KeyboardInput();
-        
+//        MessageOutput messageOut = new ConsoleOutput();
         messageIn.setMessage("Yo");
+        
+//        messageOut(messageIn);
     }
     
 }
