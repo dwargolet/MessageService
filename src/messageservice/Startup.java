@@ -12,8 +12,9 @@ public class Startup {
     public static void main(String[] args) {
 
         
+        MessageInput messageIn = new KeyboardInput();
         
-        
+        messageIn.setMessage("Yo");
     }
     
 }
