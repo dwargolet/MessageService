@@ -12,15 +12,13 @@ public class Startup {
     public static void main(String[] args) {
 
         
-//        MessageInput messageIn = new KeyboardInput();
-//        MessageOutput messageOut = new ConsoleOutput();
-//        messageIn.setMessage("Yo");
+//        MessageManager message = new MessageManager(new KeyboardInput(), new ConsoleOutput());
+//        
+//        message.processMessage();
         
-//        messageOut(messageIn);
+        MessageManager message2 = new MessageManager(new KeyboardInput(), new GuiOutput());     
+        message2.processMessage();
         
-        MessageManager message = new MessageManager(new KeyboardInput(), new ConsoleOutput());
-        
-        message.processMessage();
         
         
     }
