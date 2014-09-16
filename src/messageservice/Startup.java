@@ -12,8 +12,8 @@ public class Startup {
     public static void main(String[] args) {
 
         
-        MessageManager message = new MessageManager(new KeyboardInput(), new ConsoleOutput());
-        message.processMessage();
+      MessageManager message = new MessageManager(new KeyboardInput(), new ConsoleOutput());
+      message.processMessage();
         
 //      MessageManager message2 = new MessageManager(new KeyboardInput(), new GuiOutput());     
 //      message2.processMessage();

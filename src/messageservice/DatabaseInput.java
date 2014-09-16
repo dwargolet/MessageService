@@ -21,11 +21,6 @@ public class DatabaseInput implements MessageInput{
     }
 
     @Override
-    public void setMessage(String message) {
-      this.message = message;
-    }
-
-    @Override
     public String getMessage() {
         return message;
     }

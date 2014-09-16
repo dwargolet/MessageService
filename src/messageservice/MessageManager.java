@@ -13,7 +13,25 @@ public class MessageManager {
         this.input = input;
         this.output = output;
     }
+
+    public final MessageInput getInput() {
+        return input;
+    }
+
+    public final void setInput(MessageInput input) {
+        this.input = input;
+    }
+
+    public final MessageOutput getOutput() {
+        return output;
+    }
+
+    public final void setOutput(MessageOutput output) {
+        this.output = output;
+    }
    
+    
+ 
    public void processMessage(){
        input.retrieveMessage();
        output.outPutMessage(input.getMessage());
